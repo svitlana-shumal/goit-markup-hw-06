@@ -1,11 +1,11 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 .logo {
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
+  -font-family: Roboto, sans-serif;
+  -second-family: Raleway, sans-serif;
   display: flex;
   align-items: center;
   justify-content: flex-start;
