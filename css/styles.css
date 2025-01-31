@@ -1,27 +1,16 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
-.title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-
-  /* line-height: 60px; */
-  line-height: 1.07143;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-}
-.button {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+.logo {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 10px;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
+  gap: 0px;
+  padding: 5px 0px;
+  width: 115px;
+  height: 24px;
+}
+.page-nav {
+  width: 1440px;
+  height: 72px;
 }
