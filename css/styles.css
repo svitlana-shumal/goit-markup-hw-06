@@ -4,16 +4,13 @@ body {
   background-color: #ffffff;
 }
 .logo {
-  -font-family: Roboto, sans-serif;
-  -second-family: Raleway, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
-  padding: 5px 0px;
-  width: 115px;
-  height: 24px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 .page-nav {
   width: 1440px;
