@@ -3,6 +3,7 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+/* #region Header */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -45,6 +46,7 @@ a {
 .adress-link:focus {
   color: #404bbf;
 }
+/* section one */
 .hero {
   background: #2e2f42;
 }
@@ -69,6 +71,7 @@ a {
 .hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
+  /* section two */
 }
 .medium-title {
   font-weight: 500;
@@ -83,7 +86,7 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+/* section three */
 .team {
   background-color: #f4f4fd;
 }
@@ -94,6 +97,9 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+}
+.list .team {
+  background-color: #ffffff;
 }
 .user {
   background-color: #fff;
@@ -111,6 +117,7 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* section four */
 .top-title .portfolio {
   font-size: 36px;
   line-height: 1.11;
@@ -118,6 +125,7 @@ a {
   text-align: center;
   color: #2e2f42;
 }
+/* footer */
 .footer {
   background: #2e2f42;
 }
