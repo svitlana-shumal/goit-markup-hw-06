@@ -35,8 +35,7 @@ a {
 .header-link:focus {
   color: #404bbf;
 }
-.adress-link,
-.adress-link-tel {
+.adress-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -44,10 +43,6 @@ a {
 }
 .adress-link:hover,
 .adress-link:focus {
-  color: #404bbf;
-}
-.adress-link-tel:hover,
-.adress-link-tel:focus {
   color: #404bbf;
 }
 .hero {
@@ -90,7 +85,7 @@ a {
 }
 
 .team {
-  background: #ffffff;
+  background-color: #f4f4fd;
 }
 .top-title {
   font-size: 36px;
@@ -101,7 +96,7 @@ a {
   color: #2e2f42;
 }
 .user {
-  background: #fff;
+  background-color: #fff;
 }
 .medium-title {
   font-weight: 500;
