@@ -114,7 +114,7 @@ a {
 .container .post {
   max-width: 1128px;
   padding-left: 156px;
-  padding-right: 156;
+  padding-right: 156px;
   margin-left: auto;
   margin-right: auto;
 }
