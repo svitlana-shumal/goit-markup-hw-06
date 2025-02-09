@@ -5,7 +5,7 @@ body {
 }
 /* #region Header */
 .container {
-  max-width: 1440px;
+  max-width: 1158px;
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 .container .header {
-  max-width: 1440px;
+  max-width: 1158px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -70,8 +70,12 @@ a {
   color: #404bbf;
 }
 /* section one */
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .container .hero {
-  max-width: 1440px;
+  width: 1440px;
   height: 600px;
   padding-left: 0;
   padding-right: 0;
@@ -105,6 +109,7 @@ a {
   width: 169px;
   height: 56px;
   display: block;
+  margin: 0 auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -117,6 +122,9 @@ a {
   padding-right: 156px;
   margin-left: auto;
   margin-right: auto;
+}
+.top-title .container {
+  display: none;
 }
 .medium-title {
   font-weight: 500;
