@@ -4,6 +4,17 @@ body {
   background-color: #ffffff;
 }
 /* #region Header */
+.container {
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container .header {
+  max-width: 1440px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -12,6 +23,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
 }
 .logo-text {
   color: #2e2f42;
@@ -21,6 +37,8 @@ body {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
@@ -31,6 +49,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -47,7 +70,17 @@ a {
   color: #404bbf;
 }
 /* section one */
+.container .hero {
+  max-width: 1440px;
+  height: 600px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .hero {
+  display: block;
   background: #2e2f42;
 }
 
@@ -64,14 +97,26 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  display: block;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
-  /* section two */
+}
+/* section two */
+.container .post {
+  max-width: 1128px;
+  padding-left: 156px;
+  padding-right: 156;
+  margin-left: auto;
+  margin-right: auto;
 }
 .medium-title {
   font-weight: 500;
@@ -87,6 +132,11 @@ a {
   color: #434455;
 }
 /* section three */
+.container .portfolio {
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .team {
   background-color: #f4f4fd;
 }
@@ -100,6 +150,9 @@ a {
 }
 .list-item {
   background-color: #ffffff;
+}
+img {
+  display: block;
 }
 .user {
   background-color: #fff;
