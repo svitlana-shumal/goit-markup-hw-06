@@ -11,9 +11,9 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
-
-.container .header {
+.container-header {
   max-width: 1158px;
+  display: inline-block;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -28,6 +28,9 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   gap: 0px;
+  margin-left: 156px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .logo-text {
   color: #2e2f42;
@@ -54,6 +57,10 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
+  margin-left: 76px;
+  margin-right: 332px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .header-link:hover,
 .header-link:focus {
