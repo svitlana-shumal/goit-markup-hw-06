@@ -81,15 +81,15 @@ a {
 .header-link:focus {
   color: #404bbf;
 }
+.adress {
+  font-style: normal;
+  margin-left: auto;
+}
 .adress-list {
   display: flex;
   align-items: center;
   gap: 40px;
   padding: 24px 0;
-}
-.adress {
-  font-style: normal;
-  margin-left: auto;
 }
 .adress-link {
   line-height: 1.5;
@@ -178,6 +178,7 @@ section {
 .post-list {
   display: flex;
   gap: 24px;
+  padding: 120px 0;
 }
 .list-item {
   width: calc((100% - 72px) / 4);
