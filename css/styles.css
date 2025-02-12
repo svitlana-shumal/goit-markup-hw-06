@@ -150,8 +150,6 @@ a {
 }
 /* section two */
 .post-container {
-  display: flex;
-  flex-wrap: wrap;
   gap: 24px;
   max-width: 1128px;
   padding-left: 15px;
@@ -237,7 +235,7 @@ a {
   flex-direction: column;
   gap: 8px;
   width: 232px;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 .medium-title-wrap {
   text-align: center;
@@ -259,6 +257,32 @@ a {
   margin-right: 0;
 }
 /* section four */
+.portfolio-container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  gap: 24px;
+}
+.port {
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+  height: 420px;
+}
+.port-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+}
 .top-title .portfolio {
   font-size: 36px;
   line-height: 1.11;
@@ -269,7 +293,7 @@ a {
 /* footer */
 .container-footer {
   width: 264px;
-  padding: 100px 0 100px;
+  padding: 100px 0;
   margin-left: 156px;
   margin-right: 1020px;
 }
