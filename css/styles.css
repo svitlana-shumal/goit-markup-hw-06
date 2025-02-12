@@ -254,13 +254,7 @@ img {
   margin-right: 0;
 }
 /* section four */
-.portfolio {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  gap: 24px;
-}
+
 .top-title {
   font-weight: 700;
   font-size: 36px;
