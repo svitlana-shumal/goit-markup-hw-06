@@ -241,9 +241,8 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  gap: 24px;
   row-gap: 48px;
-  padding: 120px 0;
 }
 .list-item {
   width: calc((100% - 48px) / 3);
@@ -271,12 +270,6 @@ img {
   letter-spacing: 0.02em;
 }
 /* footer */
-.container-footer {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
 .footer {
   background: #2e2f42;
   padding: 100px 0;
