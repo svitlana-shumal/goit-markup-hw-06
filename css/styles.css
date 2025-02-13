@@ -57,7 +57,7 @@ img {
   padding: 24px 0;
   margin-right: 76px;
 }
-.logo-text {
+.logo-text-header {
   color: #2e2f42;
 }
 .header-item {
@@ -104,17 +104,10 @@ img {
   color: #404bbf;
 }
 /* section one */
-.container-hero {
-  width: 1440px;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
 .hero {
   background: #2e2f42;
   padding: 188px 0;
 }
-
 .hero-tittle {
   font-weight: 700;
   font-size: 56px;
@@ -148,13 +141,6 @@ img {
   background: #404bbf;
 }
 /* section two */
-.post-container {
-  gap: 24px;
-  max-width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -169,8 +155,8 @@ img {
 }
 .post-list {
   display: flex;
+  justify-content: space-between;
   gap: 24px;
-  padding: 120px 0;
 }
 .list-item {
   width: calc((100% - 72px) / 4);
@@ -183,7 +169,8 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.text {
+.post-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -192,13 +179,6 @@ img {
 /* section three */
 .team {
   background-color: #f4f4fd;
-}
-.team-container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  gap: 24px;
 }
 .top-title {
   font-weight: 700;
@@ -215,24 +195,20 @@ img {
   gap: 24px;
 }
 .list-item {
-  background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-}
-.user {
-  background-color: #fff;
-}
-.wrap-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-align: center;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72) / 3);
+}
+.wrap-text {
+  padding: 32px 0;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
   background: #fff;
   width: 264px;
 }
 .medium-title-wrap {
-  text-align: center;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -241,7 +217,7 @@ img {
   color: #2e2f42;
 }
 .text-wrap {
-  text-align: center;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
