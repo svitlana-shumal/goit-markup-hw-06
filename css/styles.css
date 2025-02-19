@@ -37,6 +37,8 @@ img {
 /* #region Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -73,10 +75,21 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover,
-.header-link:focus {
-  color: #404bbf;
+.header-link.current {
+  position: relative;
+}
+.header-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 .adress {
   font-style: normal;
@@ -95,9 +108,13 @@ img {
   padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-link:hover,
-.adress-link:focus {
+.adress-link:focus,
+.header-link:hover,
+.header-link:focus,
+.header-link.current {
   color: #404bbf;
 }
 .adress-link:active {
