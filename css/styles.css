@@ -124,6 +124,14 @@ img {
 .hero {
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px 600px;
 }
 .hero-tittle {
   font-weight: 700;
