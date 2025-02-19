@@ -94,6 +94,7 @@ img {
 .adress {
   font-style: normal;
   margin-left: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-list {
   display: flex;
@@ -131,7 +132,9 @@ img {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 600px;
+  background-size: cover;
+  max-width: 1440px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-tittle {
   font-weight: 700;
@@ -189,6 +192,7 @@ img {
 .icons {
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  margin-bottom: 8px;
   width: 264px;
   height: 112px;
   background: #f4f4fd;
@@ -307,6 +311,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tumba {
   position: relative;
