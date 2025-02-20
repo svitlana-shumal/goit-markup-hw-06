@@ -47,6 +47,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -66,6 +67,7 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link {
   display: block;
@@ -94,7 +96,6 @@ img {
 .adress {
   font-style: normal;
   margin-left: auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-list {
   display: flex;
@@ -109,7 +110,6 @@ img {
   padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-link:hover,
 .adress-link:focus,
@@ -135,7 +135,6 @@ img {
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-tittle {
   font-weight: 700;
@@ -164,6 +163,7 @@ img {
   height: 56px;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -272,10 +272,6 @@ img {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icons-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link {
   display: flex;
@@ -286,6 +282,7 @@ img {
   border-radius: 50%;
   background-color: #4d5ae5;
   fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -419,6 +416,8 @@ img {
   gap: 16px;
   justify-content: flex-start;
   margin-top: 16px;
+}
+.social-link.icon {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link.icon:hover,
