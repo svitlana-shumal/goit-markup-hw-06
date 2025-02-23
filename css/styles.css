@@ -429,12 +429,13 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
+  z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -462,4 +463,104 @@ img {
 }
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
+}
+.modal-btn {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  fill: #e7e9fc;
+  fill: #2e2f42;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  position: absolute;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  top: 24px;
+  right: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+  fill: #e7e9fc;
+  border: none;
+}
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-top: 72px;
+}
+.modal-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 8px;
+  border-radius: 4px;
+  width: 360px;
+  height: 336px;
+}
+.modal-label-cont {
+  margin-bottom: 8px;
+}
+.modal-input-cont {
+  position: relative;
+}
+.modal-input-cont .modal-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  resize: none;
+  outline: transparent;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input-cont:focus-within .modal-input-icon {
+  fill: #4d5ae5;
+}
+.modal-input-cont:focus-within .modal-input {
+  border-color: #4d5ae5;
+}
+.label-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.btn-modal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+}
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: #404bbf;
 }

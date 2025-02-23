@@ -48,15 +48,15 @@
     </header>
     <!--#endregion Header-->
     <main class="main">
-        <!--section one-->
+        <!--#section one-->
         <section class="hero">
             <div class="container">
                 <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
                 <button type="button" class="hero-btn">Order Service</button>
             </div>
         </section>
-        <!--endsection one-->
-        <!--section two-->
+        <!--#endsection one-->
+        <!--#section two-->
         <section class="post section">
             <div class="container">
                 <h2 class="visually-hidden">Advantages</h2>
@@ -109,8 +109,8 @@
                 </ul>
             </div>
         </section>
-        <!--endsection two-->
-        <!--section three-->
+        <!--#endsection two-->
+        <!--#section three-->
         <section class="team section">
             <div class="container">
                 <h2 class="top-title">Our Team</h2>
@@ -337,8 +337,8 @@
                 </ul>
             </div>
         </section>
-        <!--endsection three-->
-        <!--section four-->
+        <!--#endsection three-->
+        <!--#section four-->
         <section class="portfolio section">
             <div class="container">
                 <h2 class="top-title">Our Portfolio</h2>
@@ -418,9 +418,9 @@
                 </ul>
             </div>
         </section>
-        <!--endsection four-->
+        <!--#endsection four-->
     </main>
-    <!--footer-->
+    <!--#region footer-->
     <footer class="footer">
         <div class="container footer-info">
             <div class="box-logo">
@@ -481,9 +481,62 @@
             </div>
         </div>
     </footer>
+    <!-- #endregion footer -->
+    <!-- #region modal overlay -->
     <div class="backdrop is-open">
-        <div class="modal"></div>
+        <div class="modal">
+            <button class="modal-btn" type="button">
+                <svg class="form-close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-label-cont">
+                    <label class="label-name" for="user-name">Name</label>
+                    <div class="modal-input-cont">
+                        <input type="text" class="modal-input" name="user-name" id="user-name" />
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-label-cont">
+                    <label class="label-name" for="user-tel">Phone</label>
+                    <div class="modal-input-cont">
+                        <input type="tel" class="modal-input" name="tel-form" id="tel" />
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-label-cont">
+                    <label class="label-name" for="user-email">Email</label>
+                    <div class="modal-input-cont">
+                        <input type="email" class="modal-input" name="email-form" id="emails" />
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="trextar-cont">
+                    <label class="label-name" for="user-comment">Comment</label>
+                    <textarea class="textar-form" name="user-comment" id="user-comment"
+                        placeholder="Text input"></textarea>
+                </div>
+                <div class="cont-check">
+                    <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="visually-hidden" />
+                    <label for="user-privacy" class="check-lab">
+                        <span class="custom-checbox"><svg class="checbox-svg" width="10" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg></span>I accept the terms and conditions of the<a class="form-link" href="">
+                            Privacy Policy</a></label>
+                </div>
+                <button class="btn-modal" type="button">Send</button>
+            </form>
+        </div>
     </div>
+    <!--#endregion modal overlay-->
 </body>
 
 </html>
