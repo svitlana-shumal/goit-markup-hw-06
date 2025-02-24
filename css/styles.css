@@ -504,15 +504,17 @@ img {
   justify-content: flex-start;
   flex-direction: column;
   margin: 0 auto;
+  margin-top: 16px;
   gap: 8px;
   border-radius: 4px;
   width: 360px;
-  height: 336px;
+  min-height: 336px;
 }
 .modal-label-cont {
   margin-bottom: 8px;
 }
 .modal-input-cont {
+  width: 360px;
   position: relative;
 }
 .modal-input-cont .modal-input {
@@ -548,8 +550,12 @@ img {
   margin-bottom: 4px;
 }
 .visually-hidden {
-  width: 16px;
-  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+}
+.textar-cont {
+  width: 100%;
 }
 .textar-form {
   width: 100%;
