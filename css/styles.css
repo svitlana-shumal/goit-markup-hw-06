@@ -547,7 +547,10 @@ img {
   display: block;
   margin-bottom: 4px;
 }
-
+.visually-hidden {
+  width: 16px;
+  height: 16px;
+}
 .btn-modal {
   font-weight: 500;
   font-size: 16px;
@@ -557,6 +560,9 @@ img {
   color: #fff;
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
