@@ -663,12 +663,12 @@ img {
 }
 .visually-hidden-check:checked {
 }
-.visually-hidden-check:checked + .check-lab .custom-checbox {
+.visually-hidden-check:checked + .check-lab .custom-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.visually-hidden-check:checked + .check-lab .custom-checbox .checbox-svg {
+.visually-hidden-check:checked + .check-lab .custom-checkbox .checkbox-svg {
   opacity: 1;
 }
 .check-lab {
