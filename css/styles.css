@@ -612,8 +612,9 @@ img {
 .modal-input-cont:focus-within .modal-input {
   border-color: #4d5ae5;
 }
-.cont-check {
-  margin-bottom: 24px;
+.textar-cont {
+  width: 100%;
+  margin-bottom: 16px;
 }
 .label-name {
   font-weight: 400;
@@ -624,22 +625,7 @@ img {
   display: block;
   margin-bottom: 4px;
 }
-.visually-hidden-check {
-  opacity: 0;
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-.visually-hidden-check:checked {
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-}
-
-.textar-cont {
-  width: 100%;
-}
 .textar-form {
-  margin-bottom: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   color: rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -653,6 +639,37 @@ img {
   outline: transparent;
   padding: 8px 16px;
   transition: border-color 250mscubic-bezier(0.4, 0, 0.2, 1);
+}
+.textar-form::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 14px; */
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.textar-form:focus-within {
+  border-color: #4d5ae5;
+}
+.cont-check {
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.visually-hidden-check {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+.visually-hidden-check:checked {
+}
+.visually-hidden-check:checked + .check-lab .custom-checbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.visually-hidden-check:checked + .check-lab .custom-checbox .checbox-svg {
+  opacity: 1;
 }
 .check-lab {
   font-weight: 400;
@@ -686,6 +703,7 @@ img {
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
+
 .btn-modal {
   font-weight: 500;
   font-size: 16px;
