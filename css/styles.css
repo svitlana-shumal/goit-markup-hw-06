@@ -480,6 +480,9 @@ img {
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -515,6 +518,7 @@ img {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-open {
   opacity: 1;
@@ -546,6 +550,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   position: absolute;
+  cursor: pointer;
   display: flex;
   padding: 0;
   align-items: center;
@@ -559,8 +564,11 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
-  fill: #e7e9fc;
+  fill: #ffffff;
   border: none;
+}
+.form-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   font-weight: 500;
@@ -569,6 +577,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 .modal-form {
   display: flex;
@@ -598,6 +607,7 @@ img {
   outline: transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
 .modal-input-icon {
   position: absolute;
@@ -655,18 +665,20 @@ img {
   gap: 8px;
   margin-bottom: 24px;
 }
-.visually-hidden-check {
+.visually-hidden {
   width: 0;
   height: 0;
   opacity: 0;
   position: absolute;
 }
-.visually-hidden-check:checked + .check-lab .custom-checkbox {
+.visually-hidden:checked,
+.check-lab:checked,
+.custom-checkbox:checked {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.visually-hidden-check:checked + .check-lab .custom-checkbox .checkbox-svg {
+.visually-hidden:checked + .check-lab .custom-checkbox .checkbox-svg {
   opacity: 1;
 }
 .check-lab {
@@ -680,17 +692,17 @@ img {
 }
 .custom-checkbox {
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
   margin-right: 8px;
   display: inline-flex;
-  fill: transparent;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
 }
 .checkbox-svg {
   opacity: 0;
@@ -714,10 +726,13 @@ img {
   margin: 0 auto;
   margin-bottom: 24px;
   margin-top: 24px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-modal:hover,
 .btn-modal:focus {
