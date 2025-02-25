@@ -479,11 +479,23 @@
                     </li>
                 </ul>
             </div>
+            <div class="sub">
+                <p class="sub-text">Subscribe</p>
+                <form class="sub-form">
+                    <label class="sub-label">
+                        <input type="email" class="sub-input" name="sub-mail" id="email" placeholder="E-mail"
+                            required /></label>
+                    <button type="submit" class="sub-btn">Subscribe
+                        <svg class="sub-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-frame"></use>
+                        </svg></button>
+                </form>
+            </div>
         </div>
     </footer>
     <!-- #endregion footer -->
     <!-- #region modal overlay -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
             <button class="modal-btn" type="button">
                 <svg class="form-close" width="8" height="8">
@@ -525,10 +537,10 @@
                         placeholder="Text input"></textarea>
                 </div>
                 <div class="cont-check">
-                    <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"
-                        checked />
+                    <input class="visually-hidden-check" type="checkbox" name="user-privacy" id="user-privacy"
+                        value="true" checked />
                     <label for="user-privacy" class="check-lab">
-                        <span class="custom-checbox"><svg class="checbox-svg" width="16" height="16">
+                        <span class="custom-checkbox"><svg class="checkbox-svg" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg></span>I accept the terms and conditions of the<a class="form-link" href="">
                             Privacy Policy</a></label>

@@ -365,7 +365,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* footer */
+/* #footer */
 .footer {
   background: #2e2f42;
   padding: 100px 0;
@@ -373,7 +373,6 @@ img {
 .footer-info {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .box-logo {
   margin-right: 120px;
@@ -425,6 +424,81 @@ img {
 .social-link.icon:focus {
   background: #31d0aa;
 }
+.sub {
+  margin-left: auto;
+}
+.sub-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.sub-form {
+  display: flex;
+  gap: 24px;
+}
+.sub-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.sub-input {
+  border: 1px solid;
+  border-color: #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.sub-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 24px; */
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.sub-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sub-input:hover,
+.sub-input:focus {
+  border-color: #31d0aa;
+}
+.sub-btn:hover,
+.sub-btn:focus {
+  background: #31d0aa;
+}
+.sub-icon {
+  fill: #fff;
+  margin-left: 16px;
+}
+/* #endregion footer */
+/* #region modal overlay */
 .backdrop {
   position: fixed;
   top: 0;
@@ -554,6 +628,10 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
 }
+.visually-hidden-check:checked {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
 .textar-cont {
   width: 100%;
 }
@@ -583,12 +661,14 @@ img {
 .btn-modal:focus {
   background-color: #404bbf;
 }
-.custom-checbox {
+.custom-checkbox {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+.checkbox-svg {
 }
 .form-link {
   line-height: 1.33;
@@ -596,3 +676,4 @@ img {
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
+/* #endregion modal overlay */
