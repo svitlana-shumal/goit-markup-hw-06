@@ -676,17 +676,14 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.visually-hidden:checked {
+.visually-hidden:checked + .check-lab > span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-
 .visually-hidden:checked + .check-lab .custom-checkbox .checkbox-svg {
   opacity: 1;
 }
-
 .check-lab {
   font-weight: 400;
   font-size: 12px;
@@ -695,7 +692,6 @@ img {
   color: #8e8f99;
   cursor: pointer;
 }
-
 .custom-checkbox {
   border-radius: 2px;
   width: 16px;
