@@ -682,7 +682,7 @@ img {
   border: none;
   fill: #f4f4fd;
 }
-.visually-hidden:checked + .check-lab .custom-checkbox .checkbox-svg {
+.visually-hidden:checked + .check-lab .checkbox-svg {
   opacity: 1;
 }
 .check-lab {
