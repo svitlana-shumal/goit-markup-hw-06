@@ -677,14 +677,13 @@ img {
   overflow: hidden;
 }
 
-.visually-hidden:checked,
-.check-lab span {
+.visually-hidden:checked {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.visually-hidden:checked + .check-lab .checkbox-svg {
+.visually-hidden:checked + .check-lab .custom-checkbox .checkbox-svg {
   opacity: 1;
 }
 
@@ -711,15 +710,6 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
 }
-
-.custom-checkbox span {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-}
-
-.custom-checkbox span svg {
-  fill: transparent;
-}
-
 .checkbox-svg {
   opacity: 0;
 }
