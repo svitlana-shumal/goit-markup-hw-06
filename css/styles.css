@@ -676,24 +676,27 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .visually-hidden:checked,
 .check-lab span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
+
 .visually-hidden:checked + .check-lab .checkbox-svg {
   opacity: 1;
 }
+
 .check-lab {
   font-weight: 400;
   font-size: 12px;
-  /* line-height: 14px; */
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   cursor: pointer;
 }
+
 .custom-checkbox {
   border-radius: 2px;
   width: 16px;
@@ -708,9 +711,19 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
 }
+
+.custom-checkbox span {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.custom-checkbox span svg {
+  fill: transparent;
+}
+
 .checkbox-svg {
   opacity: 0;
 }
+
 .form-link {
   line-height: 1.33;
   text-decoration: underline;
