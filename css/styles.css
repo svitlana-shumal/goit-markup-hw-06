@@ -352,13 +352,13 @@ img {
 .hero-btn:focus {
   background: #404bbf;
 }
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mobile/dark-bg@1x.jpg);
+      url(../images/mobile/dark-bg@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -386,7 +386,7 @@ img {
     margin-bottom: 112px;
   }
 }
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -407,7 +407,7 @@ img {
   }
 }
 
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
