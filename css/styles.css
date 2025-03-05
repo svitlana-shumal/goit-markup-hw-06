@@ -307,3 +307,93 @@ img {
     display: none;
   }
 }
+/* #region mobile menu */
+/* #region section one */
+.hero {
+  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mobile/dark-bg@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 320px;
+  height: 432px;
+}
+.hero-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  padding: 72px 52px;
+}
+.hero-btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #404bbf;
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/dark-bg@2x.jpg;);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/dark-bg1@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    min-width: 768px;
+    height: 436px;
+  }
+  .hero-tittle {
+    font-size: 56px;
+    margin: 0 auto;
+    padding-top: 112px;
+    padding-bottom: 36px;
+    padding-left: 121px;
+    padding-right: 121px;
+  }
+  .hero-btn {
+    margin-bottom: 112px;
+  }
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/dark-bg2@2x.jpg);
+  }
+}
