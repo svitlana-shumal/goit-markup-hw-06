@@ -221,16 +221,23 @@ img {
   height: 100%;
 }
 .mobile-menu-close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-
+  border-radius: 50%;
   width: 24px;
   height: 24px;
-  border-radius: 100%;
-  fill: #e7e9fc;
-  stroke-width: 1px;
-  stroke: #2e2f42;
+  fill: #2e2f42;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  top: 24px;
+  right: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-close-icon {
   fill: #2e2f42;
@@ -273,12 +280,28 @@ img {
   height: 72px;
 }
 .mobile-adress:hover,
-.mobile-adress:focus,
-.mobile-adress-link:hover,
-.mobile-adress-link:focus {
+.mobile-adress:focus {
   color: #4d5ae5;
 }
-
+.mobile-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+.mobile-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
