@@ -372,8 +372,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0 auto;
-    max-width: 768px;
+    width: 768px;
     height: 436px;
   }
   .hero-tittle {
@@ -403,7 +402,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/desktop/people-office1@1x.jpg);
-    max-width: 1440px;
+    width: 1440px;
     height: 600px;
   }
 }
