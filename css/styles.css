@@ -263,11 +263,14 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.mobile-adress-link {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+.mobile-adress-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  width: 193px;
+  height: 72px;
 }
 .mobile-adress:hover,
 .mobile-adress:focus,
@@ -275,14 +278,8 @@ img {
 .mobile-adress-link:focus {
   color: #4d5ae5;
 }
-.mobile-link {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
-}
-. @media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
