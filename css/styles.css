@@ -321,7 +321,7 @@ img {
   background-size: cover;
   margin: 0 auto;
   width: 320px;
-  height: 432px;
+  min-height: 432px;
 }
 .hero-tittle {
   font-weight: 700;
@@ -352,7 +352,7 @@ img {
 .hero-btn:focus {
   background: #404bbf;
 }
-@media (min-resolution: 2x) {
+@media screen and (min-width: 320px) and (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -373,20 +373,17 @@ img {
     background-position: center;
     background-size: cover;
     width: 768px;
-    height: 436px;
+    min-height: 436px;
   }
   .hero-tittle {
     font-size: 56px;
     padding-top: 112px;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-bottom: 36px;
-    padding-left: 136px;
-    padding-right: 136px;
-  }
-  .hero-btn {
-    margin-bottom: 112px;
   }
 }
-@media (min-resolution: 2x) {
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -403,11 +400,17 @@ img {
       ),
       url(../images/desktop/people-office1@1x.jpg);
     width: 1440px;
-    height: 600px;
+    min-height: 600px;
+  }
+  .hero-tittle {
+    padding-top: 188px;
+    padding-bottom: 48px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }
 
-@media (min-resolution: 2x) {
+@media screen and (min-width: 1158px) and (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -416,3 +419,53 @@ img {
       url(../images/desktop/people-office2@2x.jpg);
   }
 }
+/* #endregion section one */
+/* #region section two */
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 120px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.list-item {
+  margin-bottom: 72px;
+}
+.list-item:last-child {
+  margin-bottom: 0;
+}
+.icons {
+  display: none;
+}
+.medium-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.post-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+@media screen and (min-width: 768px) {
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 356px;
+    height: 120px;
+  }
+  .list-item {
+  }
+  .medium-title {
+  }
+}
+/* #endregion section two */
