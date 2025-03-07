@@ -654,7 +654,6 @@ img {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
 }
 .medium-title {
   text-align: start;
@@ -709,8 +708,10 @@ img {
   display: block;
 }
 .box-logo {
-  margin-right: 120px;
-  width: 288px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -720,7 +721,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
+  margin: 0 auto;
   margin-bottom: 16px;
 }
 .logo-text {
@@ -732,14 +733,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.cont-icons-foot {
   margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .foot-title {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 16px;
-
-  /* line-height: 24px; */
+  margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -749,7 +754,6 @@ img {
   margin: 0;
   align-items: flex-start;
   gap: 16px;
-  justify-content: flex-start;
   margin-top: 16px;
 }
 .social-link.icon {
@@ -760,7 +764,6 @@ img {
   background: #31d0aa;
 }
 .sub {
-  width: 208px;
 }
 .sub-text {
   font-weight: 500;
@@ -785,7 +788,7 @@ img {
   border: 1px solid;
   border-color: #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   color: #fff;
@@ -799,7 +802,6 @@ img {
 .sub-input::placeholder {
   font-weight: 400;
   font-size: 12px;
-  /* line-height: 24px; */
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
@@ -817,6 +819,8 @@ img {
   min-width: 165px;
   height: 40px;
   cursor: pointer;
+  margin: 0 auto;
+  margin-top: 16px;
   border: none;
   display: flex;
   justify-content: center;
@@ -834,4 +838,14 @@ img {
 .sub-icon {
   fill: #fff;
   margin-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: flex;
+  }
+  .box-logo {
+  }
+  .sub {
+    display: flex;
+  }
 }
