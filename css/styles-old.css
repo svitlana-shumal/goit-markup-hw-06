@@ -264,8 +264,6 @@
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 16px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -325,7 +323,6 @@
 .sub-input::placeholder {
   font-weight: 400;
   font-size: 12px;
-  /* line-height: 24px; */
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
