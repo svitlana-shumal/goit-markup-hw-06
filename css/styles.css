@@ -505,6 +505,7 @@ img {
 .team {
   min-width: 320px;
   background-color: #f4f4fd;
+  margin-bottom: 96px;
 }
 .top-title {
   font-weight: 700;
@@ -581,10 +582,93 @@ img {
     min-width: 768px;
   }
   .list-wrap {
-    gap: 64px;
-  }
-  .team-item {
+    gap: 64px 24px;
   }
 }
 @media screen and (min-width: 1158px) {
+  .team {
+    min-width: 1158px;
+  }
+}
+/* #endregion section three */
+/* #region section four */
+.top-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+.sub-tumba {
+  display: none;
+}
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tumba {
+  position: relative;
+  overflow: hidden;
+}
+.sub-tumba {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+}
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.tumba:hover .sub-tumba {
+  transform: translateY(0);
+}
+.port-text {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+}
+.medium-title {
+  text-align: start;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
 }
