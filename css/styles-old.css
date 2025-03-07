@@ -210,7 +210,7 @@
   padding: 32px 16px;
   width: 360px;
 }
-.medium-title {
+.medium-title-port {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
@@ -510,7 +510,6 @@
 .textar-form::placeholder {
   font-weight: 400;
   font-size: 12px;
-  /* line-height: 14px; */
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
