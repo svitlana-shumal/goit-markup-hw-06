@@ -321,7 +321,7 @@ img {
   background-size: cover;
   margin: 0 auto;
   width: 320px;
-  min-height: 432px;
+  padding: 72px 52px;
 }
 .hero-tittle {
   font-weight: 700;
@@ -330,7 +330,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding: 72px 52px;
+  margin-bottom: 72px;
 }
 .hero-btn {
   border-radius: 4px;
@@ -346,7 +346,6 @@ img {
   color: #fff;
   display: block;
   margin: 0 auto;
-  margin-bottom: 72px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -373,14 +372,11 @@ img {
     background-position: center;
     background-size: cover;
     width: 768px;
-    min-height: 436px;
+    padding: 112px 120px;
   }
   .hero-tittle {
     font-size: 56px;
-    padding-top: 112px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
@@ -400,13 +396,10 @@ img {
       ),
       url(../images/desktop/people-office1@1x.jpg);
     width: 1440px;
-    min-height: 600px;
+    padding: 188px 457px;
   }
   .hero-tittle {
-    padding-top: 188px;
-    padding-bottom: 48px;
-    padding-left: 300px;
-    padding-right: 300px;
+    margin-bottom: 48px;
   }
 }
 
@@ -426,9 +419,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  width: 288px;
-  margin-top: 96px;
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .list-item {
   width: 100%;
@@ -455,15 +447,10 @@ img {
 @media screen and (min-width: 768px) {
   .post-list {
     flex-direction: row;
-    width: 736px;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .list-item {
     width: calc((100% - 24px) / 2);
-    margin-bottom: 72px;
-  }
-  .list-item:last-child {
-    margin-bottom: 0;
   }
   .medium-title {
     text-align: start;
@@ -473,7 +460,7 @@ img {
 @media screen and (min-width: 1158px) {
   .post-list {
     justify-content: space-between;
-    width: 1128px;
+    gap: 24px;
   }
   .list-item {
     width: calc((100% - 72px) / 4);
@@ -504,9 +491,9 @@ img {
 
 /* section three */
 .team {
-  min-width: 320px;
   background-color: #f4f4fd;
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .top-title {
   font-weight: 700;
@@ -517,7 +504,6 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
-  padding-top: 96px;
 }
 .list-wrap {
   display: flex;
@@ -579,22 +565,17 @@ img {
   background: #404bbf;
 }
 @media screen and (min-width: 768px) {
-  .team {
-    min-width: 768px;
-  }
   .list-wrap {
     gap: 64px 24px;
   }
 }
 @media screen and (min-width: 1158px) {
-  .team {
-    min-width: 1158px;
-  }
 }
 /* #endregion section three */
 /* #region section four */
 .portfolio {
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .top-title {
   font-weight: 700;
