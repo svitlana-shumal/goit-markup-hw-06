@@ -600,7 +600,6 @@ img {
   background: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .tumba {
   position: relative;
   overflow: hidden;
@@ -611,8 +610,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
   padding: 40px 32px;
   font-weight: 400;
   font-size: 16px;
@@ -624,10 +623,6 @@ img {
 .tumba:hover .sub-tumba {
   transform: translateY(0);
 }
-.sub-tumba {
-  display: none;
-}
-
 .port-text {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -667,15 +662,9 @@ img {
   }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
-    box-shadow: none;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .portfolio-list {
     row-gap: 48px;
-  }
-  .portfolio-item:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 }
 /* #endsection four */
