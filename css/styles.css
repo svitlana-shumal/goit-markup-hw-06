@@ -590,11 +590,7 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
   row-gap: 48px;
-}
-.sub-tumba {
-  display: none;
 }
 .portfolio-item {
   position: relative;
@@ -604,17 +600,34 @@ img {
   background: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .tumba {
   position: relative;
   overflow: hidden;
 }
-.portfolio-item:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.sub-tumba {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
 }
 .tumba:hover .sub-tumba {
   transform: translateY(0);
 }
+.sub-tumba {
+  display: none;
+}
+
 .port-text {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -642,26 +655,27 @@ img {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+  .portfolio-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
 }
 @media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .sub-tumba {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px 32px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    background-color: #4d5ae5;
-    color: #f4f4fd;
+  .portfolio-list {
+    row-gap: 48px;
+  }
+  .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 }
 /* #endsection four */
